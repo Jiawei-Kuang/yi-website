@@ -1,0 +1,108 @@
+//// bower:scss
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+$fa-font-path: "/bower_components/font-awesome/fonts/";
+@import "font-awesome/scss/font-awesome";
+
+$bg-color: #efefef;
+$text-color: #4f4f4f;
+$secondy-text-color: #D9DADA;
+$highlight-text-color: white;
+$button-color: #6cdcac;
+$border-color: black;
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: lightyellow;
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.intro-body {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 5%;
+  text-align: left;
+
+  .intro-about {
+    .intro-name {
+      font-size: 50px;
+      padding-bottom: 1%;
+    }
+    .intro-text {
+      font-size: 25px;
+    }
+    padding-bottom: 5%;
+  }
+  .intro-resume {
+    background-color: green;
+
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    border-radius: 5px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  .intro-link {
+    padding-top: 15%;
+    a {
+      color: darkblue;
+      text-decoration: none;
+    }
+  }
+}
+
+.about {
+  color: whitesmoke;
+  background-color: #182e4a;
+  .about-picture {
+    img {
+      margin-top: 30px;
+      width: 15%;
+    }
+    h2 {
+      margin-top: 10px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 10px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+
+
+@media(min-width:767px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+    background-color: #F8F1AB;
+    background: url('/images/hero.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+}
